@@ -1,0 +1,12 @@
+Options -MultiViews
+<IfModule mod_rewrite.c>
+  RewriteEngine on
+
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^(.*)/$ /my-php-mvc/$1 [L,R=301]
+
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  
+  RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]
+</IfModule>

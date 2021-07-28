@@ -1,0 +1,18 @@
+{
+    "name": "palayop/demomvc",
+    "description": "My Own Custom MVC with PHP",
+    "autoload": {
+        "psr-4": {
+            "Palayop\\Demomvc\\": "app/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Petter Alayo",
+            "email": "palayop@outlook.com"
+        }
+    ],
+    "require": {
+        "ext-json": "*"
+    }
+}
